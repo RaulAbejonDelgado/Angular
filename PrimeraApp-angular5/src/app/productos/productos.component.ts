@@ -21,16 +21,25 @@ import { Component } from '@angular/core';
 //para poder importar la clase primero se ha de exportar para poder usarla fuera de este fichero
 export class ProductosComponent{
 	//Y dentro de la clase definimos las propiedades que necesitemos
-	public nombre = 'Productos 2018';
-	public description = 'Productos de la temporada ';
-	public tipo = 'consumible';
-	public sale_ok = true;
-	public productos_oferta = [
+	public nombre:string ;
+	public description:string ;
+	public tipo:string ;
+	public sale_ok:boolean;
+	//en los arrays podemos usar el tipo any para poder crear arrays con datos de diferente tipo
+	public productos_oferta:Array<string>;
+
+	constructor(){
+		this.nombre ='Productos 2018';
+		this.description = 'Productos de la temporada ';
+		this.tipo = 'consumible';
+		this.sale_ok = true;
+		this.productos_oferta = [
 			'tornillo',
 			'arandela',
 			'polea',
 			'cuerda',
 			'junta',
 			'manguitos'
-	];
+		];
+	}
 }
