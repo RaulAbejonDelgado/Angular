@@ -11,44 +11,8 @@ import { Component } from '@angular/core';
 	//agregamos la vista del componente, podemos meterlo en linea
 	//En linea = Con las comillas invertidas podemos cargar el codigo html en este mismo fichero
 	//Una vez definidos las propiedades en la clase podremos llamarlas desde la vista
-	template: `
-		<h2>
-			Componente de {{ nombre }}
-		</h2>
-		//en la vista podemos usr *ngIf como si fuese un t-if de qweb
-		<h3 style="background: yellow;">
-			{{ description }}
-		</h3>
-		<h4 *ngIf="sale_ok">El producto puede ser vendido y es del tipo: {{ tipo }}
-
-		</h4>
-		<div class="row">
-			<div class="col-4" style="border: 1px solid black;">
-			xd
-			</div>
-			<div class="col-4" style="border: 1px solid black;">
-			xd
-			</div>
-			<div class="col-4" style="border: 1px solid black;">
-			xd
-			</div>
-		</div>
-		<div style="text-align:center;">
-			<table style="border:1px black solid;margin: 0 auto;">
-				<thead>
-					<th>
-						Nombre de producto
-					</th>
-				</thead>
-				<!--Iteramos sobre un array y lo mostramos en un td-->
-				<tbody *ngFor="let product of productos_oferta">
-					<td style="border:1px solid black;">
-						{{ product }}
-					</td>
-				</tbody>
-			</table>
-		</div>
-	`,
+	//template: ``,
+	templateUrl: './productos.component.html',
 
 })
 
