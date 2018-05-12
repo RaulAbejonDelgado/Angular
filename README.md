@@ -9,7 +9,7 @@
 4º Instalar ultima version de angular CLI
 	- npm install -g @angular/cli@latest
 5º Desde la linea de comandos posicionarse sobre el directorio donde queramos generar el proyecto angular
-6º En el directorio usamos el scaffold 
+6º En el directorio usamos el scalfold 
 	- ng new nombre_proyecto
 7º Arrancamos el servidor de desarrollo
 	- ng serve
