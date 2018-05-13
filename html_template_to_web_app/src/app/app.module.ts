@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 //ngmodule decorador que nos permite dentro del modulo principal(app) definir ciertas configuraciones
 @NgModule({
 	//despues de importarlo ya podemos pasarle a declarations
-	//dentro de declartions pondremos, componentes directivas 
+	//dentro de declartions pondremos, componentes directivas
   declarations: [
     AppComponent,
   ],
