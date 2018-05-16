@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PortafolioComponent } from './components/portafolio/portafolio.component';
+import { AboutComponent } from './components/about/about.component';
+import { PortItemComponent } from './components/port-item/port-item.component';
 //aqui debemos importar los componentes customizados
 //ngmodule decorador que nos permite dentro del modulo principal(app) definir ciertas configuraciones
 @NgModule({
@@ -14,7 +16,9 @@ import { PortafolioComponent } from './components/portafolio/portafolio.componen
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    PortafolioComponent
+    PortafolioComponent,
+    AboutComponent,
+    PortItemComponent
   ],
   //modulos internos de angular o modulos nuestros
   imports: [
