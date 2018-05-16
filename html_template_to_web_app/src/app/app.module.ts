@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+//Rutas
+import { app_routing } from "./app.routes";
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -22,7 +25,8 @@ import { PortItemComponent } from './components/port-item/port-item.component';
   ],
   //modulos internos de angular o modulos nuestros
   imports: [
-    BrowserModule
+    BrowserModule,
+    app_routing
   ],
   //cargaremos los servicios internos de angular o propios
   providers: [],
