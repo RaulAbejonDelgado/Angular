@@ -21,8 +21,10 @@
     Creamos un nuevo componente para el header:
     Desde la terminal posicionados en el directorio del proyecto creamos el componente con el siguiente comando:
     ng g c components/header
-    Con el siguiente comando nos deberia haber agregado los datos correspondientes en el archivo app.module.ts agregando import { HeaderComponent } from './components/header/header.component';
-    y en el decorador @NgModule deberia añadir HeaderComponent.(Revisar cuando se realize el proceso para verificarlo).
+    Con el siguiente comando nos deberia haber agregado los datos correspondientes en el archivo
+    app.module.ts agregando import { HeaderComponent } from './components/header/header.component';
+    y en el decorador @NgModule deberia añadir HeaderComponent.(Revisar cuando se realize el proceso para
+    verificarlo).
     hemos creado automaticamente la carpeta component/header con un andamiage base
     -header.component.css
     -header.component.html
