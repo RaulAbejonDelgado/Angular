@@ -6,7 +6,8 @@
   En el portfolio observamos una carpeta assets, el contenido de esta carpeta la copiamos en la carpeta assets de nuestro proyecto html_template_to_web_app/src/assets.
 
 ## 2
-    Elegimos como contenido inicial el archivo portfolio-masonry.html y copiamos las referencias de los recursos estaticos a nuestro archivo index del proyecto
+    Elegimos como contenido inicial el archivo portfolio-masonry.html y copiamos las referencias de los
+    recursos estaticos a nuestro archivo index del proyecto
     Elementos que copiamos del head:
     <link rel="icon" type="image/svg+xml" href="assets/img/urku-ico.svg">
     <link rel="stylesheet" href="assets/css/aurora-pack.min.css">
