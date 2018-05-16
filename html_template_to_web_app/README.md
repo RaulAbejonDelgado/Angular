@@ -44,3 +44,6 @@
     export class HeaderComponent  {
 
     }
+
+## 4
+    Agregamos el footer
