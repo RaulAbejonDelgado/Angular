@@ -8,10 +8,10 @@ import{
 
 const app_routes: Routes = [
   //en component debemos poner el componente que contendra la ruta
-  { path: '', component: PortafolioComponent },
+  { path: 'home', component: PortafolioComponent },
   { path: 'about', component: AboutComponent },
   { path: 'port-item', component: PortItemComponent },
-  { path: '**', pathMatch: 'full', redirectTo: '' }
+  { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
 //useHash:true para que aumente la compatibilidad con rutas que no sean html
