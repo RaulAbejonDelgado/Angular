@@ -6,7 +6,8 @@ import { Http } from "@angular/http";
 @Injectable()
 export class InformacionService {
   //creamos una propiedad que contengas las propiedades del json
-  info:any = {},
+  info:any = {};
+  cargada:boolean = false;
   //Ahora podemos usar Http en el constructor
   constructor( public http:Http) {
   //leemos el archivo json en get añadimos la ubicacion del archivo json
@@ -18,6 +19,7 @@ export class InformacionService {
     console.log(data.json());
     //recargamos nuestro objeto info con los datos del json
     this.info = data.json();
+    this.cargada = true;
 })
  }
 }
