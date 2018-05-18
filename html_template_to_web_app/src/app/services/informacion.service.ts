@@ -35,5 +35,6 @@ public getSobreNosotros(){
     this.equipo = data.json();
     this.cargadaSobreNosotros = true;
     console.log(this.equipo);
+})
 }
 }
