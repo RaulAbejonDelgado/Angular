@@ -1,8 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+//importamos http
+import { HttpModule } from "@angular/http";
 //Rutas
 import { app_routing } from "./app.routes";
+
+//servicios
+import {InformacionService} from "./services/informacion.service";
 
 //Componentes
 import { AppComponent } from './app.component';
@@ -25,12 +29,18 @@ import { PortItemComponent } from './components/port-item/port-item.component';
     PortItemComponent
   ],
   //modulos internos de angular o modulos nuestros
+  //agregamos app_routing
+  //agregamos HttpModule
   imports: [
     BrowserModule,
-    app_routing
+    app_routing,
+    HttpModule
   ],
   //cargaremos los servicios internos de angular o propios
-  providers: [],
+  //agregamos el servicio que hemos creado
+  providers: [
+    InformacionService
+  ],
   //componente principal que se va a cargar al acceder a la pagina web
   bootstrap: [AppComponent]
 })
