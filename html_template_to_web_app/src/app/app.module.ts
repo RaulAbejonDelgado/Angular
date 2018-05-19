@@ -7,6 +7,7 @@ import { app_routing } from "./app.routes";
 
 //servicios
 import {InformacionService} from "./services/informacion.service";
+import {ProductosService} from"./services/productos.service";
 
 //Componentes
 import { AppComponent } from './app.component';
@@ -39,7 +40,8 @@ import { PortItemComponent } from './components/port-item/port-item.component';
   //cargaremos los servicios internos de angular o propios
   //agregamos el servicio que hemos creado
   providers: [
-    InformacionService
+    InformacionService,
+    ProductosService
   ],
   //componente principal que se va a cargar al acceder a la pagina web
   bootstrap: [AppComponent]

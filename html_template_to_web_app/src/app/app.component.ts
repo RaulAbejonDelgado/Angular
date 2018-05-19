@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
 
 //injectamos el servicio
 import { InformacionService } from "./services/informacion.service";
+import {ProductosService} from"./services/productos.service";
 //decorador nos permite cargar atributos que va  a tner el componente y/o las clases
 @Component({
   //componente de la pagina principal sobre el que se cargan todos los componente
@@ -18,7 +19,8 @@ export class AppComponent {
   //con el servicio importado podemos hacer uso de el en el constructor
   //con este elemento deberiamos estar llamando a la funcion que tenemos en
   //services/informacion.service.ts
-  constructor ( public _is: InformacionService) {
+  constructor ( public _is: InformacionService,
+                public _ps: ProductosService) {
 
 }
 }

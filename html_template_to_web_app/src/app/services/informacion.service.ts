@@ -34,7 +34,7 @@ public getSobreNosotros(){
   this.http.get("https://bilboodoo-d7407.firebaseio.com/equipo.json").subscribe( data =>{
     this.equipo = data.json();
     this.cargadaSobreNosotros = true;
-    console.log(this.equipo);
+    //console.log(this.equipo);
 })
 }
 }
