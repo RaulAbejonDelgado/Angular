@@ -10,7 +10,7 @@ const app_routes: Routes = [
   //en component debemos poner el componente que contendra la ruta
   { path: 'home', component: PortafolioComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'port-item', component: PortItemComponent },
+  { path: 'port-item/:id', component: PortItemComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
