@@ -12,6 +12,7 @@ export class ProductosService {
     this.cargandoProductos = true;
     this.http.get('https://my-aplication-46d32.firebaseio.com/productos_idx.json').subscribe(res =>{
       console.log( res.json() );
+      this.productos = res.json();
 
     })
   }
