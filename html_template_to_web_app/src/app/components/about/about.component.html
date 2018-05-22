@@ -2,9 +2,10 @@
     <!--Nos mostrara tantos divs como registros haya en equipo-->
     <div *ngFor="let miembro of _is.equipo"
       class="ae-grid__item item-lg-4 ae-kappa au-mb-3">
-      <img [src]="miembro.img_url" alt="" class="au-mb-3">
+      <img [src]="miembro.url" alt="" class="au-mb-3">
         <h5 class="ae-u-bolder au-mt-2">{{miembro.nombre}}</h5>
         <p class="ae-u-bolder au-mb-3">{{miembro.frase}}</p>
-        <p class="au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">{{miembro.url}}</p><a href="#0" class="ae-u-bolder au-underline">{{miembro.url}}</a>
+        <p class="au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">{{miembro.subtitulo}}</p>
+          <p class="au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">{{miembro.twitter}}</p>
       </div>
   </div>
