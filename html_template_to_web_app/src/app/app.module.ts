@@ -16,6 +16,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PortafolioComponent } from './components/portafolio/portafolio.component';
 import { AboutComponent } from './components/about/about.component';
 import { PortItemComponent } from './components/port-item/port-item.component';
+import { SearchComponent } from './components/search/search.component';
 //aqui debemos importar los componentes customizados
 //ngmodule decorador que nos permite dentro del modulo principal(app) definir ciertas configuraciones
 @NgModule({
@@ -27,7 +28,8 @@ import { PortItemComponent } from './components/port-item/port-item.component';
     FooterComponent,
     PortafolioComponent,
     AboutComponent,
-    PortItemComponent
+    PortItemComponent,
+    SearchComponent
   ],
   //modulos internos de angular o modulos nuestros
   //agregamos app_routing
