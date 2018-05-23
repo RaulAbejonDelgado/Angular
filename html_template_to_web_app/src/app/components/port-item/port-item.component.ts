@@ -14,10 +14,9 @@ export class PortItemComponent  {
   constructor( private route:ActivatedRoute,
                private _ps:ProductosService){
                 route.params.subscribe( parametros=>{
-                  //console.log(parametros);
-                  console.log(parametros['id']);
-                  //_ps.cargarProducto(parametros['id']);
-                  });
-                })
+                    //console.log(parametros);
+                    console.log(parametros['id']);
+                    //_ps.cargarProducto(parametros['id']);
+                    });
+                }
               }
-}
