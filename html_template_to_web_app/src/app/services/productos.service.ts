@@ -4,6 +4,7 @@ import { Http } from"@angular/http";
 @Injectable()
 export class ProductosService {
   productos:any[] =[];
+  productos_filtrados:any[] =[];
   cargandoProductos:boolean = true;
   constructor( private http:Http ) {
     this.cargarProductos();
@@ -27,6 +28,21 @@ export class ProductosService {
       console.log( res.json() );
       this.productos = res.json();
 
+    })
+  }
+  public buscarProducto(termino:string){
+    console.log('buscando');
+    console.log(termino);
+    this.productos_filtrados = [];
+    this.productos.forEach( prod =>{
+      termino = termino.toLowerCase();
+      var producto = prod.titulo.toLowerCase();
+      var categoria = prod.categoria.toLowerCase();
+      if(producto == termino || categoria == termino){
+          console.log(prod);
+          this.productos_filtrados.push(prod);
+          console.log(this.productos_filtrados);
+      }
     })
   }
 }
