@@ -25,23 +25,23 @@ export class ProductosService {
   public cargarProductos(){
     this.cargandoProductos = true;
     this.http.get('https://my-aplication-46d32.firebaseio.com/productos_idx.json').subscribe(res =>{
-      console.log( res.json() );
+      //console.log( res.json() );
       this.productos = res.json();
 
     })
   }
   public buscarProducto(termino:string){
-    console.log('buscando');
-    console.log(termino);
+    //console.log('buscando');
+    //console.log(termino);
     this.productos_filtrados = [];
     this.productos.forEach( prod =>{
       termino = termino.toLowerCase();
       var producto = prod.titulo.toLowerCase();
       var categoria = prod.categoria.toLowerCase();
       if(producto == termino || categoria == termino){
-          console.log(prod);
+          //console.log(prod);
           this.productos_filtrados.push(prod);
-          console.log(this.productos_filtrados);
+          //console.log(this.productos_filtrados);
       }
     })
   }

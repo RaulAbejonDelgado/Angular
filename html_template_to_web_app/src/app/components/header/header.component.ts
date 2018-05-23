@@ -19,7 +19,7 @@ export class HeaderComponent  {
   buscarProducto( termino:string,
                   //injectamos en la funcion para poder hacer uso de el
                   ){
-      console.log( termino);
+      //console.log( termino);
       this.router.navigate(['buscar', termino]);
     }
 }

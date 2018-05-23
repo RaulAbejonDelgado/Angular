@@ -13,10 +13,10 @@ export class SearchComponent {
 
   constructor(private route:ActivatedRoute,
               public _ps:ProductosService) {
-    route.params.subscribe( parametros=>{
-        this.termino = parametros['termino'];
-        console.log(this.termino);
-        _ps.buscarProducto(this.termino)
+                  route.params.subscribe( parametros=>{
+                      this.termino = parametros['termino'];
+                      //console.log(this.termino);
+                      _ps.buscarProducto(this.termino)
    });
 
 }
