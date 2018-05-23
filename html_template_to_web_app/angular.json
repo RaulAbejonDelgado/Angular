@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "instalacion-angular5": {
+    "template_to_webApp": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/instalacion-angular5",
+            "outputPath": "dist/template_to_webApp",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "instalacion-angular5:build"
+            "browserTarget": "template_to_webApp:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "instalacion-angular5:build:production"
+              "browserTarget": "template_to_webApp:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "instalacion-angular5:build"
+            "browserTarget": "template_to_webApp:build"
           }
         },
         "test": {
@@ -95,7 +95,7 @@
         }
       }
     },
-    "instalacion-angular5-e2e": {
+    "template_to_webApp-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,7 +103,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "instalacion-angular5:serve"
+            "devServerTarget": "template_to_webApp:serve"
           }
         },
         "lint": {
@@ -118,5 +118,5 @@
       }
     }
   },
-  "defaultProject": "instalacion-angular5"
+  "defaultProject": "template_to_webApp"
 }
