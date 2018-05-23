@@ -9,14 +9,18 @@ import { ProductosService } from "../../services/productos.service";
 })
 export class PortItemComponent  {
 
-  producto:any ;
+  producto:any = undefined ;
 
   constructor( private route:ActivatedRoute,
                private _ps:ProductosService){
                 route.params.subscribe( parametros=>{
                     //console.log(parametros);
                     console.log(parametros['id']);
-                    //_ps.cargarProducto(parametros['id']);
+                    _ps.cargarProducto(parametros['id']).subscribe(res=>{
+                      this.producto = res.json();
+                      console.log(this.producto);
+                      console.log(this.producto.subtitulo1);
+                    });
                     });
                 }
               }

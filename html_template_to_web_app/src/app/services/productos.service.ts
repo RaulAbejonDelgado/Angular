@@ -14,15 +14,16 @@ export class ProductosService {
   //necesitamos recivir el id/cod
   public cargarProducto( cod:string){
     return this.http.get(`https://my-aplication-46d32.firebaseio.com/productos/${ cod }.json`)
-    .subscribe(res =>{
-      this.productos = res.json();
+    //.subscribe(res =>{
+    //  this.productos = res.json();
 
-    })
-}
+    }
+
+
   //Con la siguiente funcion obtenemos todos los registros de productos_idx de la base de datos firebase
   public cargarProductos(){
     this.cargandoProductos = true;
-    return this.http.get('https://my-aplication-46d32.firebaseio.com/productos_idx.json').subscribe(res =>{
+    this.http.get('https://my-aplication-46d32.firebaseio.com/productos_idx.json').subscribe(res =>{
       console.log( res.json() );
       this.productos = res.json();
 
